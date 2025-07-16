@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>한/영타 변환기</title>
+</head>
+<body>
+  <table id="convform" class="wiki">
+    <tr>
+      <th style="text-align: right">문장 입력:</th>
+      <td>
+        <textarea id="txtSource" rows="4" cols="30"></textarea>
+      </td>
+      <td style="text-align: center">
+        <button id="btnClear">비우기</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: center">
+        <input type="radio" id="optHtoE" name="mode">
+        <label for="optHtoE">한타 → 영문</label>
+        <input type="radio" id="optEtoH" name="mode" checked>
+        <label for="optEtoH">영타 → 한글</label>
+      </td>
+    </tr>
+    <tr>
+      <th style="text-align: right">변환 결과:</th>
+      <td>
+        <textarea id="txtConv" rows="4" cols="30" readonly></textarea>
+      </td>
+      <td style="text-align: center">
+        <button id="btnCopy">복사</button>
+      </td>
+    </tr>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>
